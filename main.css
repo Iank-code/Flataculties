@@ -1,0 +1,54 @@
+/* Removing the default */
+*,html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* color variables */
+:root{
+    --default: #fff;
+    --defaultBlack: #000;
+    --font3: red;
+}
+/* basic body styling */
+body{
+    background-color: var(--default);
+}
+/* basic button styling */
+button{
+    padding: 1.2px 5px;
+    margin-left: 5px;
+    outline: none;
+    background-color: var(--defaultBlack);
+    color: var(--default);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.15s ease-in-out;
+}
+button:hover{
+    color: var(--defaultBlack);
+    background: transparent;
+    font-weight: 600;
+    border: 2px solid var(--defaultBlack);
+}
+/* Styling the container */
+body .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+/* Styling the h1 inside the container */
+body .container h1{
+    color: var(--font3);
+}
+/* styling the contents inside container except the h1 */
+body .container .name-section > *{
+    margin: 20px;
+}
+/* Aligning everythig in column */
+body .container .cute,.monkey,.zebra,.lion,.panda{
+    display: flex;
+    flex-direction: column;
+}
